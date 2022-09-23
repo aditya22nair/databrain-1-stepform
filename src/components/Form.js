@@ -45,7 +45,7 @@ function Form() {
       setError({...error,firstName:"Please provide your first name"})
        return false;
     }
-    if ((formData.email === "" || !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email)))  && page === 0) {
+    if ((formData.email === "" || !(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(formData.email)))  && page === 0) {
       //alert("Please provide your Email!");
       setError({...error,email:"Please provide your Email correctly"})
       return false;
